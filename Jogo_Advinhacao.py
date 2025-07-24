@@ -35,9 +35,6 @@ while True:
         else:
             print(f"Você tem {tentativas} tentativa")
         advinha = input('Tente advinhar a palavra que estou pensando: ').lower().strip()
-        if advinha not in lista:
-            print('Essa palavra não está no nossa lista de palavras.')
-            continue
         
         if len(advinha) != len(palavra_aleatoria):
             print(f'por favor digite uma palavra com {len(palavra_aleatoria)} letras')
