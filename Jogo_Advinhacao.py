@@ -27,8 +27,7 @@ print("-="*20)
 
 
 while True:   
-    palavra_aleatoria = random.choice(lista)
-    print(palavra_aleatoria)
+    palavra_aleatoria = random.choice(lista)  
     tentativas = 6
     while tentativas > 0:
         if tentativas > 1:
