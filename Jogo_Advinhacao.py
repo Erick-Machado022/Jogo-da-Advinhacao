@@ -18,4 +18,6 @@ while tentativas > 0:
         
         if letra == palavra_aleatoria[indice]:
             print(f'a letra {letra} está correta na posição {indice}')
+        elif letra in palavra_aleatoria:
+            print(f'A letra "{letra}" existe na palavra, mas está na posição errada.')
         
