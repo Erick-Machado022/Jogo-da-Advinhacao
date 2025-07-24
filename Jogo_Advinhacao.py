@@ -2,6 +2,23 @@ import random, time
 lista = ["mundo", "praia", "festa", "docei", "limao", "fruta", "manga", "fogao", "noite", "sonho", "campo", "grama", "vidro", "aluno", "tampa", "caixa", "livro", "chave", "tempo", "pedra", "cobra", "risco", "copos", "barca", "aneis"
 ]
 
+print("Bem-vindo ao jogo de adivinhação de palavras!")
+time.sleep(1.5)
+print("Tente descobrir a palavra secreta de 5 letras.")
+time.sleep(1.5)
+print("Você terá 6 tentativas.")
+time.sleep(1.5)
+print("As letras aparecerão coloridas para te ajudar:")
+time.sleep(1.5)
+print("\033[32mVerde\033[m: letra correta no lugar certo")
+time.sleep(1.5)
+print("\033[33mAmarelo\033[m: letra correta no lugar errado")
+time.sleep(1.5)
+print("\033[31mVermelho\033[m: letra que não existe na palavra")
+time.sleep(1.5)
+print("-="*20)
+
+
 palavra_aleatoria = random.choice(lista)
 tentativas = 6
 while tentativas > 0:
