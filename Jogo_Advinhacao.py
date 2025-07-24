@@ -20,4 +20,9 @@ while tentativas > 0:
             print(f'a letra {letra} está correta na posição {indice}')
         elif letra in palavra_aleatoria:
             print(f'A letra "{letra}" existe na palavra, mas está na posição errada.')
-        
+        else:
+            print(f'A letra {letra} não tem na palavra.')
+    print('-='*10)
+    tentativas -= 1
+if tentativas == 0:
+     print(f'Você perdeu a palavra era {palavra_aleatoria}')
