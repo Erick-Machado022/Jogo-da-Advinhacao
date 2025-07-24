@@ -11,4 +11,7 @@ while tentativas > 0:
     if len(advinha) != len(palavra_aleatoria):
         print(f'por favor digite uma palavra com {len(palavra_aleatoria)} letras')
         continue
-    
+    if advinha == palavra_aleatoria:
+            print('Parabéns! Você acertou a palavra')
+            break
+
