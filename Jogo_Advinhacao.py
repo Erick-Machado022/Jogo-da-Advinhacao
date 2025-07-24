@@ -14,4 +14,8 @@ while tentativas > 0:
     if advinha == palavra_aleatoria:
             print('Parabéns! Você acertou a palavra')
             break
-
+    for indice, letra in enumerate(advinha):
+        
+        if letra == palavra_aleatoria[indice]:
+            print(f'a letra {letra} está correta na posição {indice}')
+        
